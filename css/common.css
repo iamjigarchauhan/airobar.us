@@ -697,7 +697,6 @@ textarea ~ label.error-tips {
   color: #008866;
 }
 
-/* 超出不换行 */
 .multi-line {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1325,7 +1324,6 @@ body {
   }
 }
 
-/*---分页样式---*/
 .page-wrap {
   margin: 48px auto;
   overflow: hidden;
@@ -1849,21 +1847,6 @@ body {
   }
 }
 
-/*---transition---*/
-/* .transition1{transition:all 0.2s ease-in;}
-.transition2{transition:all .36s ease;}
-.transition3{transition:all 0.4s ease-in;}
-.transition4{transition:all 0.2s}
-.transition5{transition:all 1s ease-in;}
-.transition6{transition:all 1s}
-.transition7{transition:all 0.2s ease-out;}
-
-.transition-sp1{transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;}
-.transition-sp2{transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 2) 0s}
-.transition-sp3{transition: all 0.3s cubic-bezier(0.115, 0.61, 0.255, 1) 0s}
-.transition-sp11{transition: box-shadow 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;} */
-
-/* 文字动效 */
 .animation-item {
   -webkit-transform: translateY(40px);
   -o-transform: translateY(40px);
