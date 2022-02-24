@@ -1,0 +1,334 @@
+.about-banner {
+  position: relative;
+}
+.about-banner img {
+  width: 100%;
+}
+.about-banner .title {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.about-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-nav ul {
+  margin: 24px auto 0;
+}
+.about-nav li {
+  float: left;
+}
+.about-nav li a{
+  color: #999;
+}
+.about-nav li a:hover{
+  color: #000;
+}
+.about-nav li i {
+  margin: 0 30px;
+  display: inline-block;
+  width: 5px;
+  height: 8px;
+  background: url(../../images/web/line.svg) no-repeat;
+  vertical-align: 2px;
+}
+
+.about-info .about-step {
+  position: relative;
+  margin-bottom: 40px;
+}
+.about-step .step-bg {
+  width: 129px;
+  height: 126px;
+  margin: 0 auto;
+  background: url(../../images/web/about_01.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+}
+.about-info h2 {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  font-weight: normal;
+}
+.about-info .brand-intro p,.about-info .brand-intro li,.about-info .brand-intro span {
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+}
+.issue-info .step-bg {
+  width: 154px;
+  background-image: url(../../images/web/about_03.png);
+}
+.issue-list li {
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.issue-wrapper{
+  width: 100%;
+  max-width: 1400px;
+}
+.issue-wrapper > div:first-child {
+  padding-right: 20px;
+}
+.issue-wrapper > div:last-child {
+  padding-left: 20px;
+}
+.issue-box{
+  width: 50%;
+  float: left;
+}
+.issue-title{
+  text-align: center;
+  font-size: 24px;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+.issue-list .topic {
+  font-size: 16px;
+  padding:8px 48px 8px 20px;
+  background: #fff;
+  display: flex !important;
+  align-items: center;
+  height:64px;
+  position: relative;
+}
+.issue-list .answer {
+  padding: 0 20px 20px 20px;
+  display: none;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 22px;
+  background:#f9f9f9;
+}
+.issue-list .answer a{
+  color:#E55309;
+}
+.issue-list .answer a:hover {
+  text-decoration: underline;
+}
+.topic.show {
+  background: #f9f9f9;
+  border: 0;
+  font-weight: 500;
+}
+
+.topic i {
+  position: absolute;
+  right: 8px;
+  top: calc(50% - 10px);
+  font-size: 16px;
+  width: 20px;
+  height:20px;
+  background: url(../../images/web/arrow-down.svg) no-repeat center center;
+}
+.topic.show i {
+  background: url(../../images/web/arrow-down.svg) no-repeat 7px center;
+  transform:rotate(180deg)
+}
+.news-wrapper {
+  margin-bottom: 120px;
+}
+.news-info .step-bg {
+  width: 152px;
+  background-image: url(../../images/web/about_02.png);
+}
+.news-details {
+  text-align: center;
+  padding: 48px 40px 0;
+}
+.news-details .title {
+  font-size: 28px;
+}
+.news-details .date {
+  font-size: 14px;
+  color: #999;
+  margin: 10px 0 60px;
+}
+.news-details-box {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #e6e6e6;
+  text-align: left;
+  line-height: 20px;  
+}
+.news-details-box p,.news-details-box li,.news-details-box span {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+}
+.news-details-box img,.brand-intro img {
+  max-width: 100%;
+  margin: 24px auto;
+  display: block;
+}
+.slide-item {
+  margin: 0 -30px;
+}
+.slide-item li {
+  float: left;
+  width: 33.333%;
+  padding: 0 30px;
+  margin-bottom: 48px;
+}
+.slide-item li img {
+  width: 100%;
+  max-height: 160px;
+}
+.news-list {
+  position: relative;
+}
+.slide-item .date {
+  font-size: 12px;
+  color: #999;
+  margin: 10px 0 16px;
+}
+.slide-item .desc {
+  font-size: 16px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.swiper-pagination {
+  cursor: pointer;
+}
+.pagination-item {
+  margin-right: 20px;
+  color: #999;
+}
+.pagination-item.active {
+  color: #333;
+}
+.switch-list {
+  margin: auto;
+}
+.switch-list .button-prev {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  display: inline-block;
+  margin-right: 20px;
+}
+.switch-list .icon-angle-right {
+  float: left;
+  line-height: 1.5;
+  outline: none;
+  cursor: pointer;
+}
+.switch-pagination {
+  position: static;
+  width: auto;
+  float: left;
+}
+.switch-list-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.my-button-disabled{
+  color: #D8D8D8;
+}
+@media screen and (max-width: 1024px) {
+  .slide-item li {
+    padding: 0 8px;
+    margin-bottom: 36px;
+  }
+  .slide-item {
+    margin: 0 -8px;
+  }
+  .about-banner .title {
+    font-size: 24px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .about-info h2 {
+    font-size: 24px;
+  }
+  .about-step .step-bg {
+    width: 96px;
+    height: 86px;
+  }
+  .issue-box{
+    width: 100%;
+    float: none;
+    padding: 0 !important;
+  }
+  .issue-info .step-bg {
+    width: 106px;
+  }
+  .news-info .step-bg {
+    width: 104px;
+  }
+  .swiper-hide {
+    display: none;
+  }
+  .slide-item {
+    margin: 0;
+  }
+  .slide-item li {
+    width: 50%;
+    padding: 0;
+  }
+  .slide-item li:nth-child(2n+1) {
+    padding-right: 6px;
+  }
+  .slide-item li:nth-child(2n+2) {
+    padding-left: 6px;
+  }
+  .about-info {
+    margin: 27px auto 0;
+  }
+  .news-details .title {
+    font-size: 18px;
+  }
+  .news-details .date {
+    font-size: 12px;
+  }
+  .news-details .date {
+    margin-bottom: 20px;
+  }
+  .issue-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .issue-list .topic {
+    font-size: 14px;
+    line-height: 20px;
+    height:56px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .hide-min {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-banner .title{
+    font-size: 20px;
+  }
+  .about-banner img {
+    width: auto;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .about-nav {
+    font-size: 0.8em;
+  }
+}
+
