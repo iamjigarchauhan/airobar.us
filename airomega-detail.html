@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/common.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="header-warning">
+        WARNING: This product contains nicotine. Nicotine is an addictive chemical.
+    </div>
+    <header class="public-header clearfix frame-adaption transition7">
+        <div class="header-box">
+            <div class="mobile-back"><i class="icon-arrow-left"></i></div>
+            <div class="logo-container">
+                <img src="assests/images/logo.jpg" />
+            </div>
+            <div class="mobile-icons">
+                <i class="icon-menu_icon openheaderbar"></i>
+                <i style="display: none" class="icon-close closeheaderbar"></i>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="index.html" class="">HOME<i class="icon-arrow-right"></i></a></li>
+                    <li><a href="product.html" class="active">PRODUCTS<i class="icon-arrow-right"></i></a></li>
+                    <!-- <li><a href="verify.html" class="">VERIFY PRODUCT<i class="icon-arrow-right"></i></a></li> -->
+                    <li class="slide-li">
+                        <a href="javascript:;" class="">WHOLESALE<i class="icon-arrow-right"></i><i
+                                class="icon-arrow-down"></i></a>
+                        <div class="category-wrapper">
+                            <a href="wholesale.html">Become a Wholesale</a>
+                            <!-- <a href="distributor.html">Our Distributors </a> -->
+                        </div>
+                    </li>
+                    <li class="slide-li">
+                        <a href="javascript:;" class="">SUPPORT<i class="icon-arrow-right"></i><i
+                                class="icon-arrow-down"></i></a>
+                        <div class="category-wrapper">
+                            <a href="faq.html">FAQ</a>
+                            <!-- <a href="">DOWNLOADS</a> -->
+                        </div>
+                    </li>
+                    <li><a href="contact-us.html" class="">CONTACT US<i class="icon-arrow-right"></i></a></li>
+                    <!-- <li class="showlanguagebox">
+                        <a class="language_a">LANGUAGE
+                            <i class="icon-arrow-down"></i>
+                        </a>
+
+                    </li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="product-detail-box">
+        <div class="wapper-container">
+            <div class="product-detail">
+                <style>
+                    .d-inline-block {
+                        display: inline-block;
+                    }
+
+                    .floor-container {
+                        position: relative;
+                        font-size: 100px;
+                        background: none no-repeat top center;
+                        background-size: cover;
+                        height: 9.20em;
+                        color: #fff;
+                        font-size: 100px;
+                    }
+
+                    .floor-container .row {
+                        max-width: 1080px;
+                        padding: 0 40px;
+                        margin: 0 auto;
+                        position: relative;
+                        height: 100%;
+                    }
+
+                    .floor-container .title {
+                        font-size: 0.56em;
+                        font-weight: 900;
+                        line-height: 1.1;
+                        color: #333;
+                    }
+
+                    .floor-cons {
+                        position: absolute;
+                        max-width: 100%;
+                    }
+
+                    .floor-container .subtitle {
+                        font-size: 0.24em;
+                        line-height: 1.3;
+                        font-weight: 400;
+                        margin-top: 0.4em;
+                        color: #333;
+                    }
+
+                    .animation-item-p {
+                        margin: 24px auto;
+                        text-align: center;
+                        font-size: 24px;
+                    }
+
+                    .floor1-container {
+                        background-image: url(assests/images/bc1700-1.jpg);
+                        height: 9.2em;
+                    }
+
+                    .floor1-container .title {
+                        font-size: 1.1em;
+                    }
+
+                    .floor1-container .subtitle {
+                        font-size: 0.36em;
+                        color: #ffedc2;
+                    }
+
+                    .floor1-container .floor-cons {
+                        position: absolute;
+                        top: 100px;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                        max-width: 100%;
+                    }
+
+                    .floor2-container {
+                        background-image: url(assests/images/bc1700-2.jpg);
+                        height: 9.2em;
+                    }
+
+                    .floor2-container .floor-cons {
+                        position: absolute;
+                        top: 200px;
+                        right: 0;
+                        text-align: right;
+                    }
+
+                    .floor2-container .subtitle {
+                        max-width: 600px;
+                        text-align: right;
+                        float: right;
+                    }
+
+                    .floor3-container {
+                        background-image: url(assests/images/bc1700-3.jpg);
+                        height: 9.2em;
+                    }
+
+                    .floor3-container .floor-cons {
+                        position: absolute;
+                        bottom: 50px;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+                        max-width: 100%;
+                    }
+
+                    .floor3-container .title {
+                        max-width: 800px;
+                        margin: 0 auto;
+                    }
+
+                    .floor3-container .subtitle {
+                        max-width: 600px;
+                        margin: 0 auto;
+                    }
+
+                    .floor4-container {
+                        background-image: url(assests/images/bc1700-4.jpg);
+                        height: 9.2em;
+                    }
+
+                    .floor4-container .floor-cons {
+                        position: absolute;
+                        top: 180px;
+                        left: 65px;
+                        right: 0;
+                        max-width: 100%;
+                    }
+
+                    .floor4-container .subtitle {
+                        max-width: 650px;
+                    }
+
+                    .floor5-container {
+                        background: #fff;
+                        height: auto;
+                    }
+
+                    .floor5-container .floor-cons {
+                        margin-top: 1.7em;
+                    }
+
+                    .floor5-container .title {
+                        text-align: center;
+                    }
+
+                    .floor5-container .row {
+                        padding-top: 1.2em;
+                        max-width: 12.8em;
+                        margin: 0 auto;
+                        color: #333;
+                    }
+
+                    .floor5-container .imgbox {
+                        margin: 0 auto;
+                        padding: 0.88em 0 0;
+                        max-width: 1200px;
+                    }
+
+                    .floor5-container ul {
+                        margin-left: 0.4em;
+                        width: 100%;
+                    }
+
+                    .floor5-container li {
+                        float: left;
+                        width: 33.333333%;
+                        margin-bottom: 0.8em;
+                        padding-right: 0.8em;
+                    }
+
+                    .floor5-container li img {
+                        display: block;
+                        width: 100%;
+                        max-width: 3.84em;
+                        margin: 0 auto;
+                        box-shadow: 6px 8px 16px 2px rgba(51, 51, 51, 0.10);
+                        border-radius: 18px;
+                    }
+
+                    .floor6-container {
+                        background-image: url(assests/images/bc1600-6.jpg);
+                        height: 9.2em;
+                    }
+
+                    .floor6-container .floor-cons {
+                        top: 120px;
+                        left: 160px;
+                    }
+
+                    .floor6-container .title {
+                        margin-bottom: .32em
+                    }
+
+                    .floor6-container ul {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .floor6-container li {
+                        width: 400px;
+                        position: relative;
+                    }
+
+                    .floor6-container li:first-child:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 40px;
+                        bottom: 0;
+                        width: 1px;
+                        border-right: 1px dashed #000;
+                    }
+
+                    .floor6-container li span {
+                        margin-bottom: 0.1em;
+                        font-weight: 500;
+                        display: block;
+                    }
+
+                    @media (max-width: 1024px) {
+                        .floor2-container .floor-cons {
+                            right: 32px;
+                        }
+
+                    }
+
+                    @media (max-width: 768px) {
+                        .floor-container {
+                            background-size: 100% !important;
+                        }
+
+                        .floor-container,
+                        .banner-wrapper.floor6-container,
+                        .banner-wrapper.floor6-container img,
+                        .banner-wrapper.floor6-container li {
+                            height: calc(100vh - 110px) !important
+                        }
+
+                        .floor-container .title {
+                            font-size: 0.4em;
+                        }
+
+                        .floor-container .subtitle {
+                            font-size: 0.2em;
+                        }
+
+                        .floor1-container {
+                            background: url(assests/images/m-bc1700-1.jpg) no-repeat top center;
+                        }
+
+                        .floor2-container {
+                            background: url(assests/images/m-bc1700-2.jpg) no-repeat top center;
+                        }
+
+                        .floor3-container {
+                            background: url(assests/images/m-bc1700-3.jpg) no-repeat top center;
+                        }
+
+                        .floor4-container {
+                            background: url(assests/images/m-bc1700-4.jpg) no-repeat top center;
+                        }
+
+                        .floor6-container {
+                            background: url(assests/images/bc1600-6.jpg) no-repeat top center;
+                        }
+
+                        .floor1-container .floor-cons {
+                            top: 10vh
+                        }
+
+                        .floor1-container .title img {
+                            max-width: 80%;
+                            margin: 0 auto;
+                        }
+
+                        .floor2-container .floor-cons {
+                            top: 5vh;
+                            right: 40px;
+                        }
+
+                        .floor2-container .title {
+                            text-align: right;
+                        }
+
+                        .floor3-container .title {
+                            max-width: 600px;
+                        }
+
+                        .floor4-container .floor-cons {
+                            text-align: center;
+                            top: 140px;
+                            left: 0;
+
+                        }
+
+                        .floor5-container ul {
+                            margin-left: 0.24em;
+                        }
+
+                        .floor5-container li {
+                            margin-bottom: 0.44em;
+                            padding-right: 0.44em;
+                        }
+
+                        .floor-container .subtitle {
+                            margin: 8px auto;
+                        }
+
+                        .floor5-container.floor-container {
+                            height: auto !important;
+                            max-height: 9999px;
+                        }
+
+                        .floor6-container {
+                            max-height: 460px !important;
+                            overflow: hidden;
+                        }
+
+                        .floor6-container .floor-cons {
+                            top: 32px;
+                            left: 32px;
+                            right: 32px;
+                        }
+                    }
+
+                    @media (max-width: 420px) {
+                        .floor-container {
+                            height: calc(100vh - 230px) !important;
+                            max-height: 470px;
+                        }
+
+                        .floor-container .row {
+                            padding: 0 16px;
+                        }
+
+                        .floor-container .title {
+                            font-size: 0.22em;
+                        }
+
+                        .floor-container .subtitle {
+                            font-size: 0.12em;
+                        }
+
+                        .floor2-container .floor-cons {
+                            text-align: center;
+                            right: 0;
+                        }
+
+                        .floor2-container .title {
+                            text-align: center;
+                        }
+
+                        .floor2-container .subtitle {
+                            text-align: center;
+                        }
+
+                        .floor2-container .floor-cons {
+                            left: 16px;
+                            right: 16px;
+                        }
+
+                        .floor3-container .floor-cons {
+                            bottom: 10px;
+                        }
+
+                        .floor3-container .title {
+                            max-width: 320px;
+                            margin-bottom: 8px;
+                        }
+
+                        .floor3-container .subtitle {
+                            max-width: 80%
+                        }
+
+                        .floor4-container .floor-cons {
+                            left: 32px;
+                            right: 32px;
+                            top: 10vh;
+                            text-align: center;
+                        }
+
+                        .floor5-container .title {
+                            margin-top: 64px;
+                        }
+
+                        .floor5-container ul {
+                            margin-left: 0.12em;
+                        }
+
+                        .floor5-container li {
+                            width: 50%;
+                            margin-bottom: 0.32em;
+                            padding-right: 0.24em;
+                        }
+
+                        .floor5-container .imgbox {
+                            padding: 0.48em 0 0
+                        }
+
+                        .floor5-container li img {
+                            border-radius: 6px;
+                        }
+
+                        .floor6-container {
+                            height: calc(100vh - 200px) !important;
+                            max-height: 260px !important;
+                            overflow: hidden;
+                        }
+
+                        .floor6-container .floor-cons {
+                            top: 16px;
+                            left: 16px;
+                            right: 16px;
+                        }
+
+                        .floor6-container li:first-child:after {
+                            right: 16px;
+                        }
+                    }
+
+                    @media (max-width: 375px) {
+                        .floor-container {
+                            height: calc(100vh - 208px) !important;
+                            max-height: 460px;
+                        }
+
+                        .floor3-container .floor-cons {
+                            bottom: 0px;
+                        }
+
+                        .floor3-container .title {
+                            margin-bottom: 0px;
+                            font-size: 0.2em
+                        }
+
+                        .floor6-container {
+                            height: calc(100vh - 200px) !important;
+                            max-height: 230px !important;
+                            ;
+                        }
+                    }
+
+                    @media (max-width: 320px) {
+                        .floor-container .title {
+                            font-size: 0.18em;
+                        }
+
+                        .floor-container .subtitle {
+                            font-size: 0.1em;
+                        }
+
+                        .floor3-container .floor-cons {
+                            bottom: 10px;
+                        }
+
+                        .floor3-container .subtitle {
+                            max-width: 95%;
+                        }
+
+                        .floor-container {
+                            height: calc(100vh - 178px) !important
+                        }
+
+                        .floor6-container {
+                            max-height: 200px !important;
+                        }
+                    }
+                </style>
+                <div class="floor-container floor1-container">
+                    <div class="row">
+                        <div class="floor-cons">
+                            <p class="title animation-item animation">
+                                <!-- <img src="assests/images/bc1600-1-text.png" class="d-inline-block"> -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-container floor2-container">
+                    <div class="row">
+                        <div class="floor-cons">
+                            <p class="title animation-item animation">
+                                Unique Design For Comfort
+                            </p>
+                            <p class="subtitle animation-item animation">
+                                Ergonomic Rounded Corners And Compact Size Mean Ultimate Comfort When Vaping
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-container floor3-container">
+                    <div class="row">
+                        <div class="floor-cons">
+                            <p class="title animation-item animation">
+                                Super Extraordinary <br>Flavor Hits Your Taste Buds
+                            </p>
+                            <p class="subtitle animation-item animation">
+                                Dual Coil Used Brings The Purest Taste And Gives You<br> An Immediate Experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-container floor4-container">
+                    <div class="row">
+                        <div class="floor-cons">
+                            <p class="title animation-item animation">
+                                Be Colorful, Be Full Of Energy.
+                            </p>
+                            <p class="subtitle animation-item animation">
+                                Brief Style And Contrast Color Application Show Young And Fashionable Quality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-container floor5-container">
+                    <div class="row">
+                        <p class="title center">Excellent 9 Flavors To Choose</p>
+                        <p style="text-align: center" class="subtitle">Multiple Flavors To Choose, Meeting Your
+                            Different Needs</p>
+                        <div class="imgbox">
+                            <ul class="clearfix">
+                                <li>
+                                    <img src="assests/images/bc1700-5-1.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assests/images/bc1700-5-2.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assests/images/bc1700-5-3.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assests/images/bc1700-5-4.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assests/images/bc1700-5-5.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assests/images/bc1700-5-6.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assests/images/bc1700-5-7.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assests/images/bc1700-5-8.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="assests/images/bc1700-5-9.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="floor-container floor6-container">
+                    <div class="row">
+                        <div class="floor-cons">
+                            <p class="title animation-item animation">Parameters</p>
+                            <ul class="subtitle animation-item animation">
+                                <li>
+                                    <span>Size: 38*20*74mm</span>
+                                    <span>E-liquid Capacity: 5ml</span>
+                                    <span>Nicotine Strength: 5% / 2%</span>
+                                </li>
+                                <li>
+                                    <span>Battery Capacity: 850mAh</span>
+                                    <span>Puffs: UP to 1600</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="friend_tips frame-adaption">
+         <div class="footer-box">
+            <b>Note:</b>
+            Battery power shall not be released normally when the ambient temperature is lower than -5℃. We suggest
+            before the activation, this product shall be left in a warm environment for about three days to restore
+            battery discharge capacity.
+        </div>
+    </div> -->
+    <footer class="footer frame-adaption">
+        <div class="footer-box">
+            <div class="footer-row footer-flex clearfix">
+                <div class="subscribe">
+                    <div class="s-title">Subscribe For More Updates</div>
+                    <p>Get instant updates about our new products and special promos!</p>
+                    <div class="input-group">
+                        <input type="text" name="subscribe" placeholder="Enter your email address">
+                        <button type="button" class="button-subscribe">Subscribe</button>
+                    </div>
+                </div>
+                <div class="follow-us">
+                    <div class="s-title">Follow Us</div>
+                    <ul class="clearfix">
+                        <!-- <li><a href="" target="_blank"><i class="icon-facebook"></i></a></li> -->
+                        <li><a href="https://www.instagram.com/airo.bar/" target="_blank"><i class="icon-instagram"></i></a></li>
+                        <!-- <li><a href="" target="_blank"><i class="icon-vk"></i></a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-row clearfix border">
+                <div class="copyright">
+                    <p>© Copyright 2022 AIRO. All Right Reserved.</p>
+                    <ul>
+                        <li><a href="" target="_blank">Privacy Policy </a></li>
+                        <li><a href="" target="_blank">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-des">
+                    California Proposition 65 Warning:This product contains chemicals known to the state of California
+                    to
+                    cause
+                    cancer and birth defects or other reproductive harm.
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
