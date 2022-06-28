@@ -473,7 +473,7 @@ main {
   background-size: cover;
   background-position: center center;
   position: relative;
-  background: #FD9251;
+  background: #F31D52;
   margin-bottom: 48px;
 }
 .home-indbox-c {
@@ -549,7 +549,7 @@ main {
     top:0;
     left:0;
     bottom:0;
-    background: rgba(253,146,81,0.85);
+    background: rgba(243,29,82,0.87);
     max-width: 100%;
     text-align: center;
     padding:0 80px;
