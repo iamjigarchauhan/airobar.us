@@ -537,7 +537,18 @@ main {
   margin: 0 auto;
   height: 100%;
 }
-
+.ind-floor-l-w{
+  color: #fff;
+  width: 704px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
 .ind-floor-l {
   color: #fff;
   width: 50%;
