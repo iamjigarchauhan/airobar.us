@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
@@ -11,6 +12,7 @@
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  
 </head>
 
 <body>
@@ -72,24 +74,24 @@
         </div>
         <div class="innerresize-body">
           <div class="innerresize-l">
-            <form action="post">
+            <form action="" method="post" >
               <ul class="tips-form">
                 <li>
                   <div class="inputgroup">
-                    <input name="name" type="text">
+                    <input name="name" type="text" id="name" name="name" required>
                     <span class="s-tips transition3">Name*</span>
                   </div>
                 </li>
                 <li>
                   <div class="inputgroup">
-                    <input name="email" type="text">
+                    <input name="email" type="text" id="email" name="email" required>
                     <span class="s-tips transition3">Email*</span>
                   </div>
                 </li>
                 <li>
                   <div class="inputgroup">
                     <span class="s-tips transition3">Message*</span>
-                    <textarea name="message" type="text"></textarea>
+                    <textarea name="message" type="text" id="message" name="message" required></textarea>
                   </div>
                 </li>
               </ul>
@@ -139,6 +141,53 @@
     </div>
 
   </footer>
+   
 </body>
 
 </html>
+ 
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+
+$mail = new PHPMailer(true);
+
+$name = $_REQUEST['name'];
+$message = $_REQUEST['message'];
+$email = $_REQUEST['email'];
+
+try {
+ 
+                  
+    $mail->isSMTP();                                           
+    $mail->Host       = 'smtp.gmail.com';                     
+    $mail->SMTPAuth   = true;                                   
+    $mail->Username   = 'Admin Mail here';                    
+    $mail->Password   = 'Admin gmail app password here';                             
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            
+    $mail->Port       = 465;                                    
+
+  
+    $mail->setFrom('Admin Mail here', "Admin name here");
+
+    $mail->addAddress('Admin Mail here');             
+
+    $mail->isHTML(true);                                 
+    $mail->Subject = 'Query from website';
+    $mail->Body    = "Name :- $name </br> Email:- $email </br> Message:- $message";
+    $mail->AltBody = "Name :- $name </br> Email:- $email </br> Message:- $message";
+
+    $mail->send();
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}  
+
